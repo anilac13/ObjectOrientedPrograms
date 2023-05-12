@@ -1,4 +1,5 @@
 ﻿using ObjectOrientedPrograms.InventoryDataManagement;
+using ObjectOrientedPrograms.StockAccountManagement;
 using System;
 namespace ObjectOrientedPrograms
 {
@@ -6,46 +7,43 @@ namespace ObjectOrientedPrograms
     {
         static void Main(string[] args)
         {
-            string filePath = "D:\\BridgeLabs\\ObjectOrientedPrograms\\ObjectOrientedPrograms\\InventoryDataManagement\\Inventory.json";
-            ReadTheData readTheData = new ReadTheData();
-            InventoryDetails data = readTheData.Read(filePath);
-            //for (int i = 0; i<data.typesOfRice.Count; i++)
+            string filePath = "D:\\BridgeLabs\\ObjectOrientedPrograms\\ObjectOrientedPrograms\\StockAccountManagement\\Stock.json";
+            StockAccountManagement.ReadTheData readTheData = new StockAccountManagement.ReadTheData();
+            StockDetails data = readTheData.Read(filePath);
+            //for (int i = 0; i < data.bajaj.Count; i++)
             //{
-            //    Console.WriteLine(data.typesOfRice[i].name);
-            //    Console.WriteLine(data.typesOfRice[i].weight);
-            //    Console.WriteLine(data.typesOfRice[i].pricePerKg);
+            //    Console.WriteLine(data.bajaj[i].stockName);
+            //    Console.WriteLine(data.bajaj[i].numOfShares);
+            //    Console.WriteLine(data.bajaj[i].sharePrice);
             //}
-            Console.WriteLine("Types of Rice");
+            Console.WriteLine("Stocks of Bajaj");
             Console.WriteLine("============================");
-            foreach (var item in data.typesOfRice)
+            foreach (var item in data.bajaj)
             {
-                Console.WriteLine(item.name);
-                Console.WriteLine(item.weight);
-                Console.WriteLine(item.pricePerKg);
-                int inventoryPrice = item.weight * item.pricePerKg;
-                Console.WriteLine("The price of {0} for {1}Kg is {2}Rs", item.name, item.weight, inventoryPrice);
+                Console.WriteLine(item.stockName);
+                Console.WriteLine(item.numOfShares);
+                Console.WriteLine(item.sharePrice);
+                Console.WriteLine("Stock value: " + item.numOfShares * item.sharePrice);
                 Console.WriteLine("---------------------------");
             }
-            Console.WriteLine("\nTypes of Pulses");
+            Console.WriteLine("\nStocks of Nestle");
             Console.WriteLine("============================");
-            foreach (var item in data.typesOfPulses)
+            foreach (var item in data.nestle)
             {
-                Console.WriteLine(item.name);
-                Console.WriteLine(item.weight);
-                Console.WriteLine(item.pricePerKg);
-                int inventoryPrice = item.weight * item.pricePerKg;
-                Console.WriteLine("The price of {0} for {1}Kg is {2}Rs", item.name, item.weight, inventoryPrice);
+                Console.WriteLine(item.stockName);
+                Console.WriteLine(item.numOfShares);
+                Console.WriteLine(item.sharePrice);
+                Console.WriteLine("Stock value: " + item.numOfShares * item.sharePrice);
                 Console.WriteLine("---------------------------");
             }
-            Console.WriteLine("\nTypes of Wheat");
+            Console.WriteLine("\nStocks of Britannia");
             Console.WriteLine("============================");
-            foreach (var item in data.typesOfWheat)
+            foreach (var item in data.britannia)
             {
-                Console.WriteLine(item.name);
-                Console.WriteLine(item.weight);
-                Console.WriteLine(item.pricePerKg);
-                int inventoryPrice = item.weight * item.pricePerKg;
-                Console.WriteLine("The price of {0} for {1}Kg is {2}Rs", item.name, item.weight, inventoryPrice);
+                Console.WriteLine(item.stockName);
+                Console.WriteLine(item.numOfShares);
+                Console.WriteLine(item.sharePrice);
+                Console.WriteLine("Stock value: " + item.numOfShares * item.sharePrice);
                 Console.WriteLine("---------------------------");
             }
         }

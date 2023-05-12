@@ -1,0 +1,38 @@
+{
+  "Bajaj": [
+    {
+      "stockName": "Stock1",
+      "numOfShares": 10,
+      "sharePrice": 50
+    },
+    {
+      "stockName": "Stock2",
+      "numOfShares": 20,
+      "sharePrice": 40
+    }
+  ],
+  "Nestle": [
+    {
+      "stockName": "Stock1",
+      "numOfShares": 20,
+      "sharePrice": 25
+    },
+    {
+      "stockName": "Stock2",
+      "numOfShares": 10,
+      "sharePrice": 20
+    }
+  ],
+  "Britannia": [
+    {
+      "stockName": "Stock1",
+      "numOfShares": 15,
+      "sharePrice": 25
+    },
+    {
+      "stockName": "Stock2",
+      "numOfShares": 30,
+      "sharePrice": 20
+    }
+  ]
+}
