@@ -1,0 +1,53 @@
+{
+  "TypesOfRice": [
+    {
+      "name": "Basumati",
+      "weight": 10,
+      "pricePerKg": 50
+    },
+    {
+      "name": "Bullet",
+      "weight": 20,
+      "pricePerKg": 40
+    },
+    {
+      "name": "Rice1",
+      "weight": 15,
+      "pricePerKg": 30
+    }
+  ],
+  "TypesOfWheat": [
+    {
+      "name": "Wheat1",
+      "weight": 20,
+      "pricePerKg": 25
+    },
+    {
+      "name": "Wheat2",
+      "weight": 10,
+      "pricePerKg": 20
+    },
+    {
+      "name": "Wheat3",
+      "weight": 30,
+      "pricePerKg": 15
+    }
+  ],
+  "TypesOfPulses": [
+    {
+      "name": "Pulse1",
+      "weight": 15,
+      "pricePerKg": 25
+    },
+    {
+      "name": "Pulse2",
+      "weight": 30,
+      "pricePerKg": 20
+    },
+    {
+      "name": "Pulse3",
+      "weight": 20,
+      "pricePerKg": 30
+    }
+  ]
+}
