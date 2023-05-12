@@ -22,6 +22,8 @@ namespace ObjectOrientedPrograms
                 Console.WriteLine(item.name);
                 Console.WriteLine(item.weight);
                 Console.WriteLine(item.pricePerKg);
+                int inventoryPrice = item.weight * item.pricePerKg;
+                Console.WriteLine("The price of {0} for {1}Kg is {2}Rs", item.name, item.weight, inventoryPrice);
                 Console.WriteLine("---------------------------");
             }
             Console.WriteLine("\nTypes of Pulses");
@@ -31,6 +33,8 @@ namespace ObjectOrientedPrograms
                 Console.WriteLine(item.name);
                 Console.WriteLine(item.weight);
                 Console.WriteLine(item.pricePerKg);
+                int inventoryPrice = item.weight * item.pricePerKg;
+                Console.WriteLine("The price of {0} for {1}Kg is {2}Rs", item.name, item.weight, inventoryPrice);
                 Console.WriteLine("---------------------------");
             }
             Console.WriteLine("\nTypes of Wheat");
@@ -40,6 +44,8 @@ namespace ObjectOrientedPrograms
                 Console.WriteLine(item.name);
                 Console.WriteLine(item.weight);
                 Console.WriteLine(item.pricePerKg);
+                int inventoryPrice = item.weight * item.pricePerKg;
+                Console.WriteLine("The price of {0} for {1}Kg is {2}Rs", item.name, item.weight, inventoryPrice);
                 Console.WriteLine("---------------------------");
             }
         }
